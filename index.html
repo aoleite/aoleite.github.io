@@ -1,23 +1,12 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!doctype html>
+<html>
+  <head>
+    <title>Alexandre Leite - Médico Anestesista</title>
+    <style>
+      img#logo {display: block; height: 320px; position: absolute; top: 50%; left: 50%; margin: -160px 0 0 -160px; width: 320px;}
+    </style>
+  </head>
+  <body>
+    <img id="logo" src="/img/logo.png" width="320" height="320" />
+  </body>
+</html>
